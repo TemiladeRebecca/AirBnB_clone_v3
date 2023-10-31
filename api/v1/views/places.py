@@ -17,7 +17,7 @@ from os import getenv
                  methods=['GET'],
                  strict_slashes=False)
 def get_places(city_id):
-    """Retuens places according to id of city obj
+    """Returns places according to id of city obj
     or 404 error
     """
     if city_id:
@@ -35,7 +35,7 @@ def get_places(city_id):
 
 @app_views.route('/places/<place_id>', methods=['GET'], strict_slashes=False)
 def get_place(place_id):
-    """Return place according class and id of the place
+    """Returns place according class and id of the place
     otherwise 404 error
     """
     if place_id:
